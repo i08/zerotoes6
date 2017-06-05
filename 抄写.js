@@ -190,3 +190,33 @@ var Calc = function Calc() {
   let a = 10;
   var b = 1;
 }
+
+for (let i = 0; i < arr.length; i++) {}
+console.log(i);
+
+var a = [];
+for (var i = 0; i < 10; i++) {
+  a[i] = function () {
+    console.log(i);
+  };
+}
+
+var a = [];
+for (let i = 0; i < 10; i++) {
+  a[i] = function () {
+    console.log(i);
+  };
+}
+
+let [foo, [[bar], baz]] = [1, [[2], 3]];
+let [head, ...tail] = [1, 2, 3, 4];
+let [x, y, ...z] = ['a'];
+
+var map = new Map();
+map.set('first', 'hello');
+
+for (let [key, value] of map) {
+  console.log(key + " is " + value);
+}
+
+const { SourceMapConsumer, SourceNode } = require("source-map");
